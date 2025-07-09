@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beitrittsformular - Förderverein Freibad Mundelsheim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0077b6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .checkboxes {
+            margin: 15px 0;
+        }
+        .checkboxes label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            margin: 5px 0;
+        }
+        .checkboxes input {
+            margin-right: 10px;
+        }
+        .signature {
+            margin-top: 40px;
+        }
+        .signature-line {
+            border-top: 1px solid #000;
+            padding-top: 5px;
+            margin-top: 50px;
+            width: 250px;
+        }
+        .note {
+            font-size: 0.9em;
+            margin-top: 30px;
+            color: #666;
+        }
+        .sepa {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo Förderverein Freibad Mundelsheim">
+        </div>
+        <h1>Beitrittsformular</h1>
+        
+        <div class="form-group">
+            <label for="mitgliedschaft">Art der Mitgliedschaft:</label>
+            <select id="mitgliedschaft" name="mitgliedschaft">
+                <option value="einzelperson">Einzelperson (30€/Jahr)</option>
+                <option value="familie">Familie (50€/Jahr)</option>
+                <option value="ermaessigt">Ermäßigt - Schüler/Student/Rentner (15€/Jahr)</option>
+                <option value="juristisch">Juristische Person/Firma (ab 100€/Jahr)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="anrede">Anrede:</label>
+            <select id="anrede" name="anrede">
+                <option value="herr">Herr</option>
+                <option value="frau">Frau</option>
+                <option value="divers">Divers</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname">
+        </div>
+        
+        <div class="form-group">
+            <label for="nachname">Nachname:</label>
+            <input type="text" id="nachname" name="nachname">
+        </div>
+        
+        <div class="form-group">
+            <label for="strasse">Straße und Hausnummer:</label>
+            <input type="text" id="strasse" name="strasse">
+        </div>
+        
+        <div class="form-group">
+            <label for="plz">PLZ:</label>
+            <input type="text" id="plz" name="plz">
+        </div>
+        
+        <div class="form-group">
+            <label for="ort">Ort:</label>
+            <input type="text" id="ort" name="ort">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div class="form-group">
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon">
+        </div>
+        
+        <div class="sepa">
+            <h3>SEPA-Lastschriftmandat</h3>
+            <p>Ich ermächtige den Förderverein Freibad Mundelsheim e.V., Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die vom Förderverein auf mein Konto gezogenen Lastschriften einzulösen.</p>
+            
+            <div class="form-group">
+                <label for="kontoinhaber">Kontoinhaber:</label>
+                <input type="text" id="kontoinhaber" name="kontoinhaber">
+            </div>
+            
+            <div class="form-group">
+                <label for="iban">IBAN:</label>
+                <input type="text" id="iban" name="iban" placeholder="DE00 0000 0000 0000 0000 00">
+            </div>
+            
+            <div class="form-group">
+                <label for="bic">BIC:</label>
+                <input type="text" id="bic" name="bic">
+            </div>
+        </div>
+        
+        <div class="checkboxes">
+            <label>
+                <input type="checkbox" name="datenschutz"> Ich habe die <a href="../datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.
+            </label>
+            <label>
+                <input type="checkbox" name="satzung"> Ich erkenne die Satzung des Fördervereins an.
+            </label>
+        </div>
+        
+        <div class="signature">
+            <div class="form-group">
+                <label for="ort_datum">Ort, Datum:</label>
+                <input type="text" id="ort_datum" name="ort_datum">
+            </div>
+            
+            <div class="signature-line">
+                Unterschrift
+            </div>
+        </div>
+        
+        <div class="note">
+            <p>Bitte senden Sie das ausgefüllte und unterschriebene Formular per Post an:</p>
+            <p>Förderverein Freibad Mundelsheim e.V.<br>
+            Freibadweg 1<br>
+            74395 Mundelsheim</p>
+            <p>Oder per E-Mail an: info@foerderverein-freibad-mundelsheim.de</p>
+        </div>
+    </div>
+</body>
+</html>
