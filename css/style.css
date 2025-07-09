@@ -136,6 +136,22 @@ section {
     border-left: 4px solid var(--secondary-color);
 }
 
+.appeal-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    border: 2px solid var(--accent-color);
+    text-align: center;
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
 /* Highlight Section (Mitglied werden) */
 .highlight-section {
     background-color: #f8f9fa;
